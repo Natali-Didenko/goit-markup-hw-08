@@ -5,7 +5,6 @@
   line-height: 1.173;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
 }
 .header__logo {
   color: var(--primari-text-color);
@@ -17,4 +16,8 @@
   display: block;
   margin-bottom: 20px;
   color: var(--primari-white-color);
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }

@@ -15,12 +15,63 @@
 </head>
 
 <body>
-    <!-- Header content 
+    <!-- Header content -->
     <header class="header">
-       <div class="container header__wrapper"> 
-           <nav class="header-nav">   
+       <div class="container header__wrapper">    
             <a href="./index.html" class="logo header__logo">
                  <span class="logo__web">Web</span>Studio</a>
+                <button type="submit" class="menu-open">
+                    <svg class="" width="24" height="16">
+                        <use href="./images/icons.svg#icon-mobileopen"></use>
+                    </svg>
+                </button>
+                <div class="mobile-nav is-hidden">
+                    <div class="mobile-nav__container">
+                    <button type="submit" class="menu-close">
+                        <svg class="" width="24" height="16">
+                            <use href="./images/icons.svg#icon-mobileclose"></use>
+                        </svg>  
+                    </button>
+                    <ul class="link mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a href=" " class="mobile-menu__link">Студия</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="./portfolio.html" class="mobile-menu__link"> Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href=" " class="mobile-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="link mobile-contacts__list">
+                            <li class="mobile-contacts__item">
+                            <a class="mobile-menu__link mobile-menu__link--color" href="tel:+380961111111">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+                                info@devstudio.com </a>
+                        </li>
+                    </ul>
+                    <ul class="link mobile-media__list">
+                        <li class="mobile-media__item">
+                            <a href="" class="mobile-media__link">Instagram</a>
+                        </li>
+                        <li class="mobile-media__item">
+                            <a href="" class="mobile-media__link">Twitter</a>
+                        </li>
+                        <li class="mobile-media__item">
+                            <a href="" class="mobile-media__link">Facebook</a>
+                        </li>
+                        <li class="mobile-media__item">
+                            <a href="" class="mobile-media__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                   
+                    </div>
+                </div>
+             <nav class="header-nav">       
             <ul class="link header-nav__list">
                 <li class="header-nav__item"> 
                     <a href=" " class="header-nav__link header-nav__link--current" >Студия</a> </li>
@@ -50,7 +101,7 @@
             </ul> 
        </div>
     </header>
-    -->
+    
     <!-- Main content -->
     <main>
         <!-- The main section-->
@@ -103,34 +154,34 @@
             </div>
         </section>
        
-        <!--Section what are we doing 
+        <!--Section what are we doing  -->
         <section class="work">
             <div class="container">
             <h2 class="title">Чем мы занимаемся</h2>
             <ul class="link work__list">
                 <li class="work__list__item">
-                    <img src="./images/box1.jpg" alt="box1" width="370">
+                    <img srcset="./images/box1.jpg 1x, ./images/box12x-min.jpg 2x" src="./images/box1.jpg" alt="box1" width="370">
                     <h3 class="work__list__subtitle">Десктопные приложения</h3>
                 </li>
                 <li class="work__list__item">
-                    <img src="./images/box2.jpg" alt="box2" width="370">
+                    <img  srcset="./images/box2.jpg 1x, ./images/box22x-min.jpg 2x" src="./images/box2.jpg" alt="box2" width="370">
                     <h3 class="work__list__subtitle">Мобильные приложения</h3>
                 </li>
                 <li class="work__list__item">
-                    <img src="./images/box3.jpg" alt="box3" width="370">
+                    <img  srcset="./images/box3.jpg 1x, ./images/box32x-min.jpg 2x" src="./images/box3.jpg" alt="box3" width="370">
                     <h3 class="work__list__subtitle">Дизайнерские решения</h3>
                 </li>
             </ul>
             </div>
         </section>
-        -->
-        <!--Section command 
+       
+        <!--Section command  -->
         <section class="command">
             <div class="container">
             <h2 class="title">Наша команда</h2>
             <ul class="link command__list">
                 <li class="command__list__card">
-                    <img src="./images/img1.jpg" alt="img1" width="270" class="img">
+                    <img srcset="./images/imgm1-min.jpg 1x, ./images/imgm12x-min.jpg 2x" src="./images/img1-min.jpg" alt="img1" class="command__list__img">
                     <div class="command__list__box">
                     <h3 class="command__list__name">Игорь Демьяненко</h3>
                     <p class="command__list__description">Product Designer</p>
@@ -167,7 +218,7 @@
                     </div>
                 </li>
                 <li class="command__list__card">
-                    <img src="./images/img2.jpg" alt="img2" width="270" class="img">
+                    <img srcset="./images/imgm2-min.jpg 1x, ./images/imgm22x-min.jpg 2x" src="./images/img2-min.jpg" alt="img2" class="command__list__img">
                     <div class="command__list__box">
                     <h3  class="command__list__name">Ольга Репина</h3>
                     <p class="command__list__description">Frontend Developer</p>
@@ -204,7 +255,7 @@
                     </div>
                 </li>
                 <li class="command__list__card">
-                    <img src="./images/img3.jpg" alt="img3" width="270" class="img">
+                    <img srcset="./images/imgm3-min.jpg 1x, ./images/imgm32x-min.jpg 2x" src="./images/img3-min.jpg" alt="img3" class="command__list__img">
                     <div class="command__list__box">
                     <h3  class="command__list__name">Николай Тарасов</h3>
                     <p class="command__list__description">Marketing</p>
@@ -241,7 +292,7 @@
                     </div>
                 </li>
                 <li class="command__list__card">
-                    <img src="./images/img4.jpg" alt="img4" width="270" class="img">
+                    <img srcset="./images/imgm4-min.jpg 1x, ./images/imgm42x-min.jpg 2x" src="./images/img4-min.jpg" alt="img4" class="command__list__img">
                     <div class="command__list__box">
                     <h3  class="command__list__name">Михаил Ермаков</h3>
                     <p class="command__list__description">UI Designer</p>
@@ -280,8 +331,8 @@
             </ul>
             </div>
         </section>
-        -->
-        <!--Client section
+       
+        <!--Client section -->
         <section class="client">
             <div class="container">
                 <h2 class="title">Постоянные клиенты</h2>
@@ -331,9 +382,9 @@
                 </ul>
             </div>
         </section>
-        -->
+       
     </main>
-    <!-- Footer content 
+    <!-- Footer content -->
 <footer class="footer">
     <div class="container footer__conteiner">
         <div class="footer-contact">
@@ -385,7 +436,7 @@
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="footer-subscribe">
             <p class="footer__title">Подпишитесь на рассылку</p>
             <div class="footer-send">
                 <input class="footer-send__input" type="email" name="email" id="mail" placeholder="E-mail" />
@@ -398,9 +449,9 @@
         </div>
     </div>
 </footer>
--->
+
     
-<!-- modal
+<!-- modal -->
     <div class="modal is-hidden" data-modal>
         <div class="modal__wrapper">
             <button data-modal-close type="button" 
@@ -449,7 +500,8 @@
         </div>
     </div>
     <script src="./modal.js"></script>
-    -->
+    <script src="./menu.js"></script>
+   
 </body>
 
 </html>

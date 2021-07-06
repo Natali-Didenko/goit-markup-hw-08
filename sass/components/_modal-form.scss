@@ -66,10 +66,13 @@
 .form__checkbox-label {
   margin-bottom: 4px;
   color: var(--title-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .form__checkbox-link {
   color: var(--accent-color);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   text-decoration-line: underline;

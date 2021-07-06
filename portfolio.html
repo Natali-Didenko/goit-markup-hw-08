@@ -19,12 +19,63 @@
     <!-- Header content -->
     <header class="header">
         <div class="container header__wrapper">
+            <a href="./index.html" class="logo header__logo">
+                <span class="logo__web">Web</span>Studio</a>
+            <button type="submit" class="menu-open">
+                <svg class="" width="24" height="16">
+                    <use href="./images/icons.svg#icon-mobileopen"></use>
+                </svg>
+            </button>
+            <div class="mobile-nav is-hidden">
+                <div class="mobile-nav__container">
+                    <button type="submit" class="menu-close">
+                        <svg class="" width="24" height="16">
+                            <use href="./images/icons.svg#icon-mobileclose"></use>
+                        </svg>
+                    </button>
+                    <ul class="link mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a href=" " class="mobile-menu__link">Студия</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="./portfolio.html" class="mobile-menu__link"> Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href=" " class="mobile-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="link mobile-contacts__list">
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-menu__link mobile-menu__link--color" href="tel:+380961111111">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+                                info@devstudio.com </a>
+                        </li>
+                    </ul>
+                    <ul class="link mobile-media__list">
+                        <li class="mobile-media__item">
+                            <a href="" class="mobile-media__link">Instagram</a>
+                        </li>
+                        <li class="mobile-media__item">
+                            <a href="" class="mobile-media__link">Twitter</a>
+                        </li>
+                        <li class="mobile-media__item">
+                            <a href="" class="mobile-media__link">Facebook</a>
+                        </li>
+                        <li class="mobile-media__item">
+                            <a href="" class="mobile-media__link">LinkedIn</a>
+                        </li>
+                    </ul>
+    
+                </div>
+            </div>
             <nav class="header-nav">
-                <a href="./index.html" class="logo header__logo"> 
-                    <span class="logo__web">Web</span>Studio</a>
                 <ul class="link header-nav__list">
                     <li class="header-nav__item">
-                        <a href="./index.html" class="header-nav__link ">Студия</a>
+                        <a href="./index.html" class="header-nav__link">Студия</a>
                     </li>
                     <li class="header-nav__item">
                         <a href="./portfolio.html" class="header-nav__link header-nav__link--current"> Портфолио</a>
@@ -36,16 +87,14 @@
             </nav>
             <ul class="link contacts__list">
                 <li class="contacts__list__item">
-                    <a href="mailto:info@devstudio.com" 
-                    class="contacts__list__link">
+                    <a href="mailto:info@devstudio.com" class="contacts__list__link">
                         <svg class="contacts__list__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com </a>
                 </li>
                 <li class="contacts__list__item">
-                    <a href="tel:+380961111111" 
-                    class="contacts__list__link">
+                    <a href="tel:+380961111111" class="contacts__list__link">
                         <svg class="contacts__list__icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
@@ -76,11 +125,12 @@
                     <button type="button" class="buttons"> Маркетинг </button>
                 </li>
             </ul>
+            <div class="card-set">
             <ul class="link card">
                 <li class="card__item">
                     <a class="card__link" href="#">
                     <div class="card__overlay">
-                    <img src="./images/hoptimg1.jpg" alt="pimg1" width="370" 
+                    <img srcset="./images/hoptimg1.jpg 1x, ./images/portimg12x-min.jpg 2x" src="./images/hoptimg1.jpg" alt="pimg1" width="" 
                     class="card__img">
                     <p class="card__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -94,7 +144,7 @@
                 <li class="card__item">
                     <a class="card__link" href="#">
                      <div class="card__overlay">
-                    <img src="./images/portimg2.jpg" alt="pimg2" width="370" 
+                    <img srcset="./images/portimg2.jpg 1x, ./images/portimg22x-min.jpg 2x" src="./images/portimg2.jpg" alt="pimg2" width="" 
                     class="card__img">
                     <p class="card__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -108,7 +158,7 @@
                 <li class="card__item">
                     <a class="card__link" href="#">
                     <div class="card__overlay">
-                    <img src="./images/portimg3.jpg" alt="pimg3" width="370" 
+                    <img srcset="./images/portimg3.jpg 1x, ./images/portimg32x-min.jpg 2x" src="./images/portimg3.jpg" alt="pimg3" width="" 
                     class="card__img">
                     <p class="card__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -120,9 +170,9 @@
                     </a>
                 </li>
                 <li class="card__item">
-                    <a class="card__linkt" href="#">
+                    <a class="card__link" href="#">
                     <div class="card__overlay">
-                    <img src="./images/portimg4.jpg" alt="pimg4" width="370"
+                    <img srcset="./images/portimg4.jpg 1x, ./images/portimg42x-min.jpg 2x" src="./images/portimg4.jpg" alt="pimg4" width=""
                      class="card__img">
                     <p class="card__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -136,7 +186,7 @@
                 <li class="card__item">
                     <a class="card__link" href="#">
                     <div class="card__overlay">
-                    <img src="./images/portimg5.jpg" alt="pimg5" width="370" 
+                    <img srcset="./images/portimg5.jpg 1x, ./images/portimg52x-min.jpg 2x" src="./images/portimg5.jpg" alt="pimg5" width="" 
                     class="card__img">
                     <p class="card__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -150,7 +200,7 @@
                 <li class="card__item">
                     <a class="card__link" href="#">
                     <div class="card__overlay">
-                    <img src="./images/portimg6.jpg" alt="pimg6" width="370" 
+                    <img srcset="./images/portimg6.jpg 1x, ./images/portimg62x-min.jpg 2x" src="./images/portimg6.jpg" alt="pimg6" width="" 
                     class="card__img">
                     <p class="card__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -164,7 +214,7 @@
                 <li class="card__item">
                     <a class="card__link" href="#">
                     <div class="card__overlay">
-                    <img src="./images/portimg7.jpg" alt="pimg7" width="370" 
+                    <img srcset="./images/portimg7.jpg 1x, ./images/portimg72x-min.jpg 2x" src="./images/portimg7.jpg" alt="pimg7" width="" 
                     class="card__img">
                     <p class="card__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -178,7 +228,7 @@
                 <li class="card__item">
                     <a class="card__link" href="#">
                     <div class="card__overlay">
-                    <img src="./images/portimg8.jpg" alt="pimg8" width="370" 
+                    <img srcset="./images/portimg8.jpg 1x, ./images/portimg82x-min.jpg 2x" src="./images/portimg8.jpg" alt="pimg8" width="" 
                     class="card__img">
                     <p class="card__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -192,7 +242,7 @@
                 <li class="card__item">
                     <a class="card__link" href="#">
                     <div class="card__overlay">
-                    <img src="./images/portimg9.jpg" alt="pimg9" width="370" 
+                    <img srcset="./images/portimg9.jpg 1x, ./images/portimg92x-min.jpg 2x" src="./images/portimg9.jpg" alt="pimg9" width="" 
                     class="card__img">
                     <p class="card__text-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                         платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -204,6 +254,7 @@
                     </a>
                 </li>
             </ul>
+            </div>
             </div>
         </section>
     </main>
@@ -272,6 +323,7 @@
             </div>
     </div>
 </footer>
+<script src="./menu.js"></script>
 </body>
         
 </html>
